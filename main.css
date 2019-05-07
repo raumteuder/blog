@@ -296,7 +296,7 @@ li {
     height: 10rem;
     border: 3px solid #42cef4;
     background-color: #d9e537;;
-    margin-bottom:2rem;
+    margin-bottom:5rem;
     display: flex;
     transform: rotate(45deg);
 }
@@ -420,7 +420,7 @@ li {
 /*Start contact*/
 
 .contact{
-    background-color: #221e3f;
+    background-color:#04252b;
 
 }
 
@@ -442,8 +442,8 @@ input,select,textarea{
 input[type="submit"]{
 
     width:initial;
-    background-color: #d9e537;
-    color: #eee;
+    background-color: #d9e555;
+    color: #16162d;
     padding: 1rem 2rem;
     border-radius: .8rem;
     cursor: pointer;
@@ -460,7 +460,7 @@ input[type="submit"]:hover{
 .copyright{
     width: 100%;
     text-align: center;
-    background-color: #16162d;
+    background-color: #031414;
     padding: 2rem 0;
     position: relative;
 }
@@ -492,9 +492,9 @@ input[type="submit"]:hover{
 
 @keyframes pulse{
     8%{
-        box-shadow: 0 0 0 0 rgba(253, 87, 191, 8.99);
+        box-shadow: 0 0 0 0 rgba(87, 253, 162, 8.99);
     }
-    70%{box-shadow: 0 0 0 2rem rgba(253, 87, 191, 0);}
-    100%{box-shadow: 0 0 0 0 rgba(253, 87, 191, 0);}
+    70%{box-shadow: 0 0 0 2rem rgba(87, 253, 162, 0);}
+    100%{box-shadow: 0 0 0 0 rgba(87, 228, 253, 0);}
 }
 /*End animations*/
