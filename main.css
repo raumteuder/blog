@@ -47,7 +47,7 @@ img {
 
 .section-heading {
   text-align: center;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
 }
 
 .section-heading h1 {
@@ -56,7 +56,7 @@ img {
   text-transform: uppercase;
   font-weight: 400;
   position: relative;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 .section-heading h1::before,
 .section-heading h1::after {
@@ -71,6 +71,7 @@ img {
   width: 10rem;
   height: 3px;
   border-radius: 0.8rem;
+  top: 5rem;
 }
 
 .section-heading h1::after {
@@ -78,6 +79,7 @@ img {
   height: 1.5rem;
   border-radius: 100%;
   bottom: -1rem;
+  top: 4.5rem;
 }
 .section-heading h6 {
   font-size: 1.6rem;
@@ -121,14 +123,14 @@ li {
   margin: 0 2rem;
 }
 .nav-link {
-  font-family: "The Historia Demo", sans-serif;
+  font-family: "Major ", sans-serif;
   font-size: 5rem;
   padding: 1rem;
 }
 
 .nav-link:hover,
 .nav-link:focus {
-  background: linear-gradient(to top, #ffe838, #fd57bf);
+  background: linear-gradient(to top, #42cef4, #d9e537);
   -webkit-background-clip: text;
   background-clip: border-box;
   -webkit-text-fill-color: transparent;
@@ -158,7 +160,7 @@ li {
 }
 
 .bar {
-  background: linear-gradient(to right, #ffe838, #fd57bf);
+  background: linear-gradient(to right, #42cef4, #d9e537);
   width: 100%;
   height: 4px;
   border-radius: 0.8rem;
@@ -197,8 +199,8 @@ li {
 
 .landing-text h1 {
   font-size: 20rem;
-  font-family: "The Historia Demo", sans-serif;
-  background: linear-gradient(to top, #ffe838, #fd57bf);
+  font-family: "Major Mono Display", sans-serif;
+  background: linear-gradient(to top, #42cef4, #d9e537);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 1rem;
@@ -206,6 +208,7 @@ li {
 }
 
 .landing-text h6 {
+  padding-top: 6rem;
   font-size: 2rem;
   font-weight: 300;
 }
@@ -291,15 +294,15 @@ li {
 .icon-container{
     width: 10rem;
     height: 10rem;
-    border: 3px solid #ffe838;
-    background-color: #fd57bf;;
+    border: 3px solid #42cef4;
+    background-color: #d9e537;;
     margin-bottom:2rem;
     display: flex;
     transform: rotate(45deg);
 }
 
 .icon-container i{
-    color: #ffe838;
+    color: #42cef4;
     font-size: 5rem;
     margin: auto;
     transform: rotate(-45deg);
@@ -353,7 +356,7 @@ li {
 /*Start timeline*/
 
 .timeline ul{
-    border-left: 4px solid #ffe838;
+    border-left: 4px solid #42cef4;
     border-radius: .8rem;
     background-color: rgba(0, 0, 0, 0.05);
     margin: 0 auto;
@@ -391,6 +394,7 @@ li {
     display:blck;
     top: 50%;
     transform: translateY(-50%);
+    left: -8rem;
 }
 
 .timeline .date::before{
@@ -404,7 +408,7 @@ li {
 
 .timeline .date::after{
     content: '';
-    box-shadow: 0 0 0 4px #fd57bf;;
+    box-shadow: 0 0 0 4px #d9e537;;
     border-radius: 100%;
     left: -8 rem;
     height: 1.5rem;
@@ -432,13 +436,13 @@ input,select,textarea{
     padding: 1rem;
     margin-top: 5px;
     border:none;
-    outline-color: #fd57bf
+    outline-color: #d9e537
 }
 
 input[type="submit"]{
 
     width:initial;
-    background-color: #fd57bf;
+    background-color: #d9e537;
     color: #eee;
     padding: 1rem 2rem;
     border-radius: .8rem;
@@ -448,7 +452,7 @@ input[type="submit"]{
 
 input[type="submit"]:hover{
     color: #221e3f;
-    background-color: #ffe838;
+    background-color: #42cef4;
 }
 /*End contact*/
 
