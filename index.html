@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Rosie Ellis</title>
+    <title>Roman Khadka</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       rel="stylesheet"
@@ -12,6 +12,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   </head>
   <body>
     <header>
@@ -50,10 +51,10 @@
 
     <section class="about" id="about">
       <div class="container">
-        <div class="profile-img">
+        <div class="profile-img" data-aos="fade-right" data-aos-delay="300">
           <img src="images/profile.png" alt="" />
         </div>
-        <div class="about-details">
+        <div class="about-details" data-aos="fade-left" data-aos-delay="600">
           <div class="about-heading">
             <h1>About</h1>
             <h6>Myself</h6>
@@ -67,25 +68,25 @@
             dicta veroomnis voluptatem natus quidem dignissimos et quos eius
             dicta vero
           </p>
-        </div>
-        <div class="social-media">
-          <ul class="nav-list">
-            <li>
-              <a href="#" class="icon-link">
-                <i class="fab fa-facebook-square"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="icon-link">
-                <i class="fab fa-github-square"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="icon-link">
-                <i class="fab fa-twitter-square"></i>
-              </a>
-            </li>
-          </ul>
+          <div class="social-media">
+            <ul class="nav-list">
+              <li>
+                <a href="#" class="icon-link">
+                  <i class="fab fa-facebook-square"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="icon-link">
+                  <i class="fab fa-github-square"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="icon-link">
+                  <i class="fab fa-twitter-square"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -99,7 +100,7 @@
           <h6>What I can do for you</h6>
         </div>
         <div class="my-skills">
-          <div class="skill">
+          <div class="skill" data-aos="fade-in" data-aos-delay="300">
             <div class="icon-container">
               <i class="fas fa-layer-group"> </i>
             </div>
@@ -109,19 +110,19 @@
               ipsum dolor, sit amet consectetur adipisicing elit.
             </p>
           </div>
-          <div class="skill">
+          <div class="skill" data-aos="fade-in" data-aos-delay="600">
             <div class="icon-container">
-              <i class="fas fa-code-group"> </i>
+              <i class="fas fa-code"> </i>
             </div>
-            <h1>Web Developmetn</h1>
+            <h1>Web Development</h1>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem
               ipsum dolor, sit amet consectetur adipisicing elit.
             </p>
           </div>
-          <div class="skill">
+          <div class="skill" data-aos="fade-in" data-aos-delay="900">
             <div class="icon-container">
-              <i class="fas fa-chart-group"> </i>
+              <i class="fas fa-chart-bar"> </i>
             </div>
             <h1>Application Development</h1>
             <p>
@@ -142,10 +143,18 @@
           <h6>What I have done</h6>
         </div>
         <div class="portfolio-item">
-          <div class="portfolio-img">
+          <div
+            class="portfolio-img has-margin-right"
+            data-aos="fade-right"
+            data-aos-delay="300"
+          >
             <img src="images/portitem1.jpeg" alt="" />
           </div>
-          <div class="portfolio-description">
+          <div
+            class="portfolio-description"
+            data-aos="fade-left"
+            data-aos-delay="600"
+          >
             <h6>Web Development</h6>
             <h1>Blog Website</h1>
             <p>
@@ -156,24 +165,36 @@
           </div>
         </div>
         <div class="portfolio-item">
-          <div class="portfolio-description">
+          <div
+            class="portfolio-description has-margin-right"
+            data-aos="fade-right"
+            data-aos-delay="900"
+          >
             <h6>Web Design</h6>
-            <h1>Produc Layout</h1>
+            <h1>Product Layout</h1>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem
               ipsum dolor, sit amet consectetur adipisicing elit.
             </p>
             <a href="#" class="cta">View Details</a>
           </div>
-          <div class="portfolio-img">
+          <div class="portfolio-img" data-aos="fade-left" data-aos-delay="1200">
             <img src="images/portitem2.jpeg" alt="" />
           </div>
         </div>
         <div class="portfolio-item">
-          <div class="portfolio-img">
+          <div
+            class="portfolio-img has-margin-right"
+            data-aos="fade-right"
+            data-aos-delay="1500"
+          >
             <img src="images/portitem3.jpeg" alt="" />
           </div>
-          <div class="portfolio-description">
+          <div
+            class="portfolio-description"
+            data-aos="fade-left"
+            data-aos-delay="1800"
+          >
             <h6>Web Design</h6>
             <h1>Product Sketch</h1>
             <p>
@@ -194,7 +215,7 @@
           </h1>
           <h6>Past and current jobs</h6>
         </div>
-        <div class="timeline">
+        <div class="timeline" data-aos="fade-down" data-aos-delay="300">
           <ul>
             <li class="date" data-date="2018-2019">
               <h1>IT Glance</h1>
@@ -230,7 +251,7 @@
           </h1>
           <h6>Let's have a chat!</h6>
         </div>
-        <form action="">
+        <form action="" data-aos="fade-up" data-aos-delay="300">
           <label for="name">Name: </label>
           <input
             type="text"
@@ -262,10 +283,9 @@
 
     <footer class="copyright">
       <div class="up" id="up">
-        <i class="fas fa-chevron-up">
-          <p>&copy; 2019 Roman Khadka</p>
-        </i>
+        <i class="fas fa-chevron-up"> </i>
       </div>
+      <p>&copy; 2019 Roman Khadka</p>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
