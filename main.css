@@ -7,7 +7,7 @@
   
   html {
     font-size: 10px;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #eee;
   }
   body {
@@ -27,7 +27,7 @@
   }
   p {
     font-size: 1.8rem;
-    font-weight: 300;
+    font-weight: 400;
   }
   
   img {
@@ -98,14 +98,15 @@
   
   .top-nav {
     width: 100%;
-    top: -100vh;
+    
     height: 100vh;
     position: fixed;
+    top: -100vh;
     background-color: #16162d;
     border-bottom-right-radius: 100%;
     border-bottom-left-radius: 100%;
-    transition: all 650mx cubic-bezier(1, 0, 0, 1);
-    z-index: 77;
+    transition: all 650ms cubic-bezier(1, 0, 0, 1);
+    z-index: 50;
   }
   
   .nav-list {
@@ -126,9 +127,10 @@
   }
   
   .nav-link:hover,
-  .nav-link-focus {
+  .nav-link:focus {
     background: linear-gradient(to top, #ffe838, #fd57bf);
     -webkit-background-clip: text;
+    background-clip: border-box;
     -webkit-text-fill-color: transparent;
   }
   
@@ -147,7 +149,7 @@
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
-    z-index: 1000;
+    z-index: 1500;
     transition: transform 650ms ease-out;
   }
   
@@ -173,16 +175,17 @@
   .open .bar.start {
     transform: rotate(-450deg) translateX(0.8rem);
   }
-  .open .bar.end {
-    transform: rotate(-450deg) translateX(-0.8rem);
-  }
+  
   .bar.end {
     align-self: flex-end;
     transform-origin: left;
     transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
   }
+  .open .bar.end {
+      transform: rotate(-450deg) translateX(-0.8rem);
+    }
   
-  landing-text {
+  .landing-text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -466,6 +469,7 @@
       right: 5rem;
       border-radius: 100%;
       display:flex;
+      animation: pulse 2s infinite;
   }
   
   .up i{
@@ -480,6 +484,14 @@
   /*End footer*/
   
   /*Start animations*/
+  
+  @keyframes pulse{
+      8%{
+          box-shadow: 0 0 0 0 rgba(253, 87, 191, 8.99);
+      }
+      70%{box-shadow: 0 0 0 2rem rgba(253, 87, 191, 0);}
+      100%{box-shadow: 0 0 0 0 rgba(253, 87, 191, 0);}
+  }
   /*End animations*/
   
   /*Start media queries*/
