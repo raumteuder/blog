@@ -124,16 +124,15 @@ li {
   margin: 0 2rem;
 }
 .nav-link {
-  font-family: "Major", sans-serif;
-  font-size: 5rem;
-  padding: 1rem;
+  font-family: "Major Mono Display", sans-serif;
+  font-size: 3rem;
 }
 
 .nav-link:hover,
 .nav-link:focus {
   background: linear-gradient(to top, #42cef4, #d9e537);
+  color: black;
   -webkit-background-clip: text;
-  background-clip: border-box;
   -webkit-text-fill-color: transparent;
 }
 
